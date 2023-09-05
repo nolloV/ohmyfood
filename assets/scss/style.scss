@@ -33,7 +33,6 @@ main {
     &__title {
       text-align: center;
       width: 17.1875rem;
-      height: 4.25rem;
     }
     &__txt {
       text-align: center;
@@ -61,6 +60,7 @@ main {
   margin: 1.25rem;
   display: flex;
   flex-direction: column;
+  margin-bottom: 3rem;
   &__button {
     display: flex;
     flex-direction: row;
@@ -92,6 +92,7 @@ main {
   background: var(--Background, #f6f6f6);
   display: flex;
   flex-direction: column;
+  padding-bottom: 3rem;
   &__title {
     margin: 1.25rem;
   }
@@ -102,7 +103,7 @@ main {
     background-color: white;
     margin: 1.25rem;
     width: auto;
-    height: 21rem;
+    height: 17rem;
     position: relative;
   }
   &__card--img {
@@ -118,6 +119,7 @@ main {
     background: #99e2d0;
     color: #008766;
     padding: 0.5rem 1rem 0.5rem 1rem;
+    font-size: 0.875rem;
   }
   &__card--content {
     display: flex;
@@ -126,7 +128,38 @@ main {
     margin: 0 1rem 0 1rem;
     align-items: center;
   }
+  &__card--txt {
+    line-height: 1rem;
+  }
   &__card--heart {
     font-size: 1.7rem;
+  }
+  &__card--content-title {
+    font-size: 1.125rem;
+  }
+}
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.375rem 1.5625rem;
+  background: #353535;
+  color: white;
+  font-weight: 500;
+  &__logo {
+    width: 8rem;
+  }
+  &__link {
+    text-decoration: none;
+    color: white;
+  }
+  &__icon {
+    margin-right: 0.5rem;
+    font-size: 0.8rem;
+  }
+  &__icon2 {
+    margin-right: 0.2rem;
+    font-size: 0.8rem;
   }
 }

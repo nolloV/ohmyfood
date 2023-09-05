@@ -31,7 +31,6 @@ main .reserve-explore-container {
 main .reserve-explore-container__title {
   text-align: center;
   width: 17.1875rem;
-  height: 4.25rem;
 }
 main .reserve-explore-container__txt {
   text-align: center;
@@ -55,6 +54,7 @@ main .reserve-explore-container__button {
   margin: 1.25rem;
   display: flex;
   flex-direction: column;
+  margin-bottom: 3rem;
 }
 .founction-container__button {
   display: flex;
@@ -87,6 +87,7 @@ main .reserve-explore-container__button {
   background: var(--Background, #f6f6f6);
   display: flex;
   flex-direction: column;
+  padding-bottom: 3rem;
 }
 .restaurant-container__title {
   margin: 1.25rem;
@@ -98,7 +99,7 @@ main .reserve-explore-container__button {
   background-color: white;
   margin: 1.25rem;
   width: auto;
-  height: 21rem;
+  height: 17rem;
   position: relative;
 }
 .restaurant-container__card--img {
@@ -115,6 +116,7 @@ main .reserve-explore-container__button {
   background: #99e2d0;
   color: #008766;
   padding: 0.5rem 1rem 0.5rem 1rem;
+  font-size: 0.875rem;
 }
 .restaurant-container__card--content {
   display: flex;
@@ -123,6 +125,38 @@ main .reserve-explore-container__button {
   margin: 0 1rem 0 1rem;
   align-items: center;
 }
+.restaurant-container__card--txt {
+  line-height: 1rem;
+}
 .restaurant-container__card--heart {
   font-size: 1.7rem;
+}
+.restaurant-container__card--content-title {
+  font-size: 1.125rem;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.375rem 1.5625rem;
+  background: #353535;
+  color: white;
+  font-weight: 500;
+}
+.footer-container__logo {
+  width: 8rem;
+}
+.footer-container__link {
+  text-decoration: none;
+  color: white;
+}
+.footer-container__icon {
+  margin-right: 0.5rem;
+  font-size: 0.8rem;
+}
+.footer-container__icon2 {
+  margin-right: 0.2rem;
+  font-size: 0.8rem;
 }/*# sourceMappingURL=style.css.map */
