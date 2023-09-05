@@ -49,4 +49,36 @@ main .reserve-explore-container__button {
   background: var(--Button-Gradient, linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%));
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   border: none;
+}
+
+.founction-container {
+  margin: 1.25rem;
+  display: flex;
+  flex-direction: column;
+}
+.founction-container__button {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  height: 4rem;
+  border-radius: 1.25rem;
+  background: #f6f6f6;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  gap: 1rem;
+  align-items: center;
+  margin: 1rem;
+  font-weight: 500;
+}
+.founction-container__button--number {
+  display: flex;
+  padding: 3px 3px;
+  background-color: #9356dc;
+  color: #fff;
+  border-radius: 50%;
+  width: 1.5rem;
+  height: 1.5rem;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  transform: translateX(-1rem);
 }/*# sourceMappingURL=style.css.map */
