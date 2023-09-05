@@ -81,4 +81,48 @@ main .reserve-explore-container__button {
   align-items: center;
   justify-content: center;
   transform: translateX(-1rem);
+}
+
+.restaurant-container {
+  background: var(--Background, #f6f6f6);
+  display: flex;
+  flex-direction: column;
+}
+.restaurant-container__title {
+  margin: 1.25rem;
+}
+.restaurant-container__card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.9375rem;
+  background-color: white;
+  margin: 1.25rem;
+  width: auto;
+  height: 21rem;
+  position: relative;
+}
+.restaurant-container__card--img {
+  border-radius: 0.9375rem 0.9375rem 0 0;
+  height: 66%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.restaurant-container__card--text-block {
+  position: absolute;
+  top: 0.2rem;
+  right: 1rem;
+  border-radius: 0.125rem;
+  background: #99e2d0;
+  color: #008766;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+}
+.restaurant-container__card--content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 1rem 0 1rem;
+  align-items: center;
+}
+.restaurant-container__card--heart {
+  font-size: 1.7rem;
 }/*# sourceMappingURL=style.css.map */
