@@ -4,6 +4,80 @@ body {
   font-family: "Roboto";
   margin: 0px;
 }
+.loader-container {
+  position: fixed;
+  background-color: #eaeaeadb;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  display: none;
+}
+.loader-content {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+}
+
+/*Loader*/
+.loading span {
+  display: inline-block;
+  vertical-align: middle;
+  width: 0.6em;
+  height: 0.6em;
+  margin: 0.19em;
+  background: #007db6;
+  border-radius: 0.6em;
+  animation: loading 3.6s alternate;
+}
+
+.loading span:nth-of-type(2) {
+  background: #9356dc;
+  animation-delay: 0.2s;
+}
+.loading span:nth-of-type(3) {
+  background: #003a68;
+  animation-delay: 0.4s;
+}
+.loading span:nth-of-type(4) {
+  background: #89c8fa;
+  animation-delay: 0.6s;
+}
+.loading span:nth-of-type(5) {
+  background: #008766;
+  animation-delay: 0.8s;
+}
+.loading span:nth-of-type(6) {
+  background: #e29999;
+  animation-delay: 1s;
+}
+.loading span:nth-of-type(7) {
+  background: #9356dc;
+  animation-delay: 1.2s;
+}
+.loading span:nth-of-type(8) {
+  background: #9356dc;
+  animation-delay: 1.4s;
+}
+.loading span:nth-of-type(9) {
+  background: #003a68;
+  animation-delay: 1.6s;
+}
+.loading span:nth-of-type(10) {
+  background: #89c8fa;
+  animation-delay: 1.8s;
+}
+
+@keyframes loading {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*Loader*/
+
 header {
   .logo-container {
     display: flex;
@@ -53,14 +127,26 @@ main {
       );
       box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
       border: none;
+      transition: all 0.2s linear;
+    }
+    &__button:hover {
+      background: linear-gradient(
+          0deg,
+          rgba(255, 255, 255, 0.15) 0%,
+          rgba(255, 255, 255, 0.15) 100%
+        ),
+        linear-gradient(201deg, #9356dc -5.2%, #ff79da 110.74%);
+      box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
     }
   }
 }
 .founction-container {
-  margin: 1.25rem;
+  margin: 0 0 3rem 1.25rem;
   display: flex;
   flex-direction: column;
-  margin-bottom: 3rem;
+  .fa-solid {
+    color: #7e7e7e;
+  }
   &__button {
     display: flex;
     flex-direction: row;
@@ -73,6 +159,9 @@ main {
     align-items: center;
     margin: 1rem;
     font-weight: 500;
+    &:hover > .fa-solid {
+      color: #9356dc;
+    }
     &--number {
       display: flex;
       padding: 3px 3px;
@@ -88,11 +177,13 @@ main {
     }
   }
 }
+
 .restaurant-container {
   background: var(--Background, #f6f6f6);
   display: flex;
   flex-direction: column;
   padding-bottom: 3rem;
+
   &__title {
     margin: 1.25rem;
   }
@@ -108,7 +199,7 @@ main {
   }
   &__card--img {
     border-radius: 0.9375rem 0.9375rem 0 0;
-    height: 66%;
+    height: 72%;
     object-fit: cover;
   }
   &__card--text-block {
@@ -120,6 +211,7 @@ main {
     color: #008766;
     padding: 0.5rem 1rem 0.5rem 1rem;
     font-size: 0.875rem;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
   }
   &__card--content {
     display: flex;
@@ -131,13 +223,31 @@ main {
   &__card--txt {
     line-height: 1rem;
   }
-  &__card--heart {
-    font-size: 1.7rem;
-  }
+
   &__card--content-title {
     font-size: 1.125rem;
   }
+  &__card--like {
+    font-size: 1.7rem;
+    position: relative;
+  }
+  &__card--like-fill {
+    color: #ff79da;
+    fill: #ff79da;
+    position: absolute;
+    top: 2px;
+    opacity: 0;
+    transition: all 0.7s ease-out;
+    animation-fill-mode: backwards;
+  }
+
+  &__card--like:hover {
+    .restaurant-container__card--like-fill {
+      opacity: 1;
+    }
+  }
 }
+
 .footer-container {
   display: flex;
   flex-direction: column;
