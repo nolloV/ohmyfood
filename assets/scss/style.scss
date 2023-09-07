@@ -144,9 +144,21 @@ main {
   margin: 0 0 3rem 1.25rem;
   display: flex;
   flex-direction: column;
+  @media screen and (min-width: 1024px) {
+    margin: 0 8rem 2rem 8rem;
+  }
+  &__block {
+    @media screen and (min-width: 1024px) {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+  }
+
   .fa-solid {
     color: #7e7e7e;
   }
+
   &__button {
     display: flex;
     flex-direction: row;
@@ -159,8 +171,12 @@ main {
     align-items: center;
     margin: 1rem;
     font-weight: 500;
+    padding-right: 0.8rem;
     &:hover > .fa-solid {
       color: #9356dc;
+    }
+    @media screen and (min-width: 1024px) {
+      width: 100%;
     }
     &--number {
       display: flex;
@@ -186,6 +202,17 @@ main {
 
   &__title {
     margin: 1.25rem;
+    @media screen and (min-width: 1024px) {
+      margin: 1.25rem 0rem 0rem 8rem;
+    }
+  }
+  &__block {
+    @media screen and (min-width: 1024px) {
+      margin: 0 7rem 2rem 7rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+    }
   }
   &__card {
     display: flex;
@@ -196,6 +223,9 @@ main {
     width: auto;
     height: 17rem;
     position: relative;
+    @media screen and (min-width: 1024px) {
+      height: 15rem;
+    }
   }
   &__card--img {
     border-radius: 0.9375rem 0.9375rem 0 0;
@@ -257,8 +287,28 @@ main {
   background: #353535;
   color: white;
   font-weight: 500;
+  @media screen and (min-width: 1024px) {
+    flex-direction: row-reverse;
+    height: 3rem;
+    align-items: flex-end;
+  }
   &__logo {
     width: 8rem;
+    @media screen and (min-width: 1024px) {
+      flex-direction: row-reverse;
+      margin-left: 4rem;
+    }
+  }
+  &__block {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-weight: 500;
+    @media screen and (min-width: 1024px) {
+      display: flex;
+      flex-direction: row;
+      gap: 1rem;
+    }
   }
   &__link {
     text-decoration: none;
