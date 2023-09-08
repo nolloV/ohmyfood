@@ -1,2 +1,1 @@
-# ohmyfood
-Projet 4
+Base de code pour le cours HTML CSS
