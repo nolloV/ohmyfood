@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OhMyfood</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Shrikhand:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/scss/style.css" />
+  </head>
+
+  <body>
+    <div class="main-container">
+      <header>
+        <a href="index.html" class="arrow-container">
+          <i class="fa-solid fa-arrow-left arrow-container__icon"></i>
+        </a>
+        <div class="logo-container">
+          <img
+            class="logo-container__img"
+            src="./assets/images/logo/ohmyfood.png"
+            alt="Logo-Ohmyfood"
+          />
+        </div>
+      </header>
+
+      <main>
+        <section class="palette-container">
+          <img
+            class="palette-container__card--img"
+            src="assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+            alt="La Palette"
+          />
+
+          <div class="palette-container__block">
+            <article class="palette-container__card">
+              <div class="palette-container__card--content">
+                <div class="palette-container__card--txt">
+                  <h2 class="palette-container__card--content-title">
+                    La palette du goût
+                  </h2>
+                </div>
+                <div class="palette-container__card--like">
+                  <i
+                    class="fa-solid fa-heart palette-container__card--like-fill"
+                  ></i>
+                  <i
+                    class="fa-regular fa-heart palette-container__card--like-empty"
+                  ></i>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="menu-container">
+          <div>
+            <h3 class="menu-container__title">Entrées</h3>
+            <div class="menu-container__title--subtitle"></div>
+          </div>
+          <article class="menu-container__block">
+            <div class="menu-container__button">
+              <div class="menu-container__button--plat">
+                <h3>Fricassée d'escargots</h3>
+                <p class="menu-container__button--subtitle">
+                  Au piment d'Espelette
+                </p>
+              </div>
+              <p class="menu-container__button--price">25€</p>
+            </div>
+          </article>
+          <article class="menu-container__block">
+            <div class="menu-container__button">
+              <div class="menu-container__button--plat">
+                <h3>Foie gras de canard mi-cuit</h3>
+                <p class="menu-container__button--subtitle">
+                  Et ses copeaux de truffe noire
+                </p>
+              </div>
+              <p class="menu-container__button--price">35€</p>
+            </div>
+          </article>
+          <article class="menu-container__block">
+            <div class="menu-container__button">
+              <div class="menu-container__button--plat">
+                <h3>Œuf au plat</h3>
+                <p class="menu-container__button--subtitle">
+                  Assaisonné à la truffe sur lit de caviar
+                </p>
+              </div>
+              <p class="menu-container__button--price">20€</p>
+            </div>
+          </article>
+
+          <div>
+            <h3 class="menu-container__title">Plats</h3>
+            <div class="menu-container__title--subtitle"></div>
+          </div>
+          <article class="menu-container__block">
+            <div class="menu-container__button">
+              <div class="menu-container__button--plat">
+                <h3>Filet de bœuf aux herbes</h3>
+                <p class="menu-container__button--subtitle">
+                  Accompagné de sa ribambelle de légumes
+                </p>
+              </div>
+              <p class="menu-container__button--price">40€</p>
+            </div>
+          </article>
+          <article class="menu-container__block">
+            <div class="menu-container__button">
+              <div class="menu-container__button--plat">
+                <h3>Parmentier de queue de bœuf</h3>
+                <p class="menu-container__button--subtitle">
+                  À la truffe noire sur sa purée de panais
+                </p>
+              </div>
+              <p class="menu-container__button--price">35€</p>
+            </div>
+          </article>
+          <article class="menu-container__block">
+            <div class="menu-container__button">
+              <div class="menu-container__button--plat">
+                <h3>Filet de turbot</h3>
+                <p class="menu-container__button--subtitle">Aux agrumes</p>
+              </div>
+              <p class="menu-container__button--price">44€</p>
+            </div>
+          </article>
+
+          <div>
+            <h3 class="menu-container__title">Desserts</h3>
+            <div class="menu-container__title--subtitle"></div>
+          </div>
+          <article class="menu-container__block">
+            <div class="menu-container__button">
+              <div class="menu-container__button--plat">
+                <h3>Paris-Brest</h3>
+                <p class="menu-container__button--subtitle">Revisité</p>
+              </div>
+              <p class="menu-container__button--price">18€</p>
+            </div>
+          </article>
+          <article class="menu-container__block">
+            <div class="menu-container__button">
+              <div class="menu-container__button--plat">
+                <h3>Macaron au chocolat d'exception</h3>
+                <p class="menu-container__button--subtitle">
+                  Et glace à la vanille de Madagascar
+                </p>
+              </div>
+              <p class="menu-container__button--price">22€</p>
+            </div>
+          </article>
+          <article class="menu-container__block">
+            <div class="menu-container__button">
+              <div class="menu-container__button--plat">
+                <h3>Mousse au chocolat</h3>
+                <p class="menu-container__button--subtitle">
+                  Au piment d'Espelette et à la truffe noire
+                </p>
+              </div>
+              <p class="menu-container__button--price">23€</p>
+            </div>
+          </article>
+        </section>
+
+        <section class="order-container">
+          <button class="order-container__button">Commander</button>
+        </section>
+      </main>
+      <footer class="footer-container">
+        <div>
+          <img
+            class="footer-container__logo"
+            src="assets/images/logo/ohmyfood-white.svg"
+            alt="Ohmyfood"
+          />
+        </div>
+        <div class="footer-container__block">
+          <div>
+            <i class="footer-container__icon fa-solid fa-utensils"></i>
+            <a class="footer-container__link" href="#"
+              >Proposer un restaurant</a
+            >
+          </div>
+          <div>
+            <i class="footer-container__icon2 fa-solid fa-handshake-angle"></i>
+            <a class="footer-container__link" href="#">Devenir partenaire</a>
+          </div>
+          <div class="footer-container__block2">
+            <a class="footer-container__link" href="#">Mentions légales</a>
+            <a class="footer-container__link" href="mailto:name@email.com"
+              >Contact</a
+            >
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
