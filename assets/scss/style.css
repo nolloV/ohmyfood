@@ -12,88 +12,45 @@ a {
   color: black;
 }
 
+/*Loader*/
 .loader-container {
   position: fixed;
-  background-color: rgba(234, 234, 234, 0.8588235294);
+  background-color: rgb(234, 234, 234);
   width: 100%;
   height: 100%;
   z-index: 10;
-  display: none;
-}
-
-.loader-content {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  height: 100%;
   align-items: center;
+  animation: opacity 3s cubic-bezier(1, -0.16, 1, -0.48) forwards;
 }
-
-/*Loader*/
-.loading span {
-  display: inline-block;
-  vertical-align: middle;
-  width: 0.6em;
-  height: 0.6em;
-  margin: 0.19em;
-  background: #007db6;
-  border-radius: 0.6em;
-  animation: loading 3.6s alternate;
-}
-
-.loading span:nth-of-type(2) {
-  background: #9356dc;
-  animation-delay: 0.2s;
-}
-
-.loading span:nth-of-type(3) {
-  background: #003a68;
-  animation-delay: 0.4s;
-}
-
-.loading span:nth-of-type(4) {
-  background: #89c8fa;
-  animation-delay: 0.6s;
-}
-
-.loading span:nth-of-type(5) {
-  background: #008766;
-  animation-delay: 0.8s;
-}
-
-.loading span:nth-of-type(6) {
-  background: #e29999;
-  animation-delay: 1s;
-}
-
-.loading span:nth-of-type(7) {
-  background: #9356dc;
-  animation-delay: 1.2s;
-}
-
-.loading span:nth-of-type(8) {
-  background: #9356dc;
-  animation-delay: 1.4s;
-}
-
-.loading span:nth-of-type(9) {
-  background: #003a68;
-  animation-delay: 1.6s;
-}
-
-.loading span:nth-of-type(10) {
-  background: #89c8fa;
-  animation-delay: 1.8s;
-}
-
-@keyframes loading {
+@keyframes opacity {
   0% {
-    opacity: 0;
-  }
-  100% {
     opacity: 1;
   }
+  100% {
+    opacity: 0;
+    z-index: -10;
+  }
 }
-/*Loader*/
+.loader-container__loader {
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid #9356dc;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 header .logo-container {
   display: flex;
   align-items: center;
@@ -380,21 +337,21 @@ main .reserve-explore-container__button:hover {
 }
 
 /*Menu section*/
-.palette-container {
+.resto-container {
   display: flex;
   flex-direction: column;
 }
-.palette-container__card--img {
+.resto-container__card--img {
   height: 20rem;
   -o-object-fit: cover;
      object-fit: cover;
   position: relative;
 }
-.palette-container__block {
+.resto-container__block {
   display: flex;
   align-items: center;
 }
-.palette-container__card {
+.resto-container__card {
   display: flex;
   flex-direction: column;
   border-radius: 2.5rem 2.5rem 0rem 0rem;
@@ -402,27 +359,27 @@ main .reserve-explore-container__button:hover {
   width: 100%;
   position: absolute;
 }
-.palette-container__card--content {
+.resto-container__card--content {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
 }
-.palette-container__card--content-title {
+.resto-container__card--content-title {
   font-family: Shrikhand;
   font-size: 1.75rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
-.palette-container__card--txt {
+.resto-container__card--txt {
   line-height: 1rem;
 }
-.palette-container__card--like {
+.resto-container__card--like {
   font-size: 1.7rem;
   position: relative;
 }
-.palette-container__card--like-fill {
+.resto-container__card--like-fill {
   color: #ff79da;
   fill: #ff79da;
   position: absolute;
@@ -431,7 +388,7 @@ main .reserve-explore-container__button:hover {
   transition: all 0.7s ease-out;
   animation-fill-mode: backwards;
 }
-.palette-container__card--like:hover .palette-container__card--like-fill {
+.resto-container__card--like:hover .resto-container__card--like-fill {
   opacity: 1;
 }
 
@@ -459,7 +416,6 @@ main .reserve-explore-container__button:hover {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-color: white;
   }
 }
 .menu-container__button {
@@ -469,7 +425,7 @@ main .reserve-explore-container__button:hover {
   width: auto;
   height: 4.7rem;
   border-radius: 1.25rem;
-  background: #f6f6f6;
+  background: white;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
   align-items: center;
   margin: 0 0 1rem 0;
