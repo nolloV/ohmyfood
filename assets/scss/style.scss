@@ -416,6 +416,7 @@ main {
       display: flex;
       flex-direction: row;
       justify-content: center;
+      position: relative;
     }
   }
 
@@ -431,6 +432,8 @@ main {
     align-items: center;
     margin: 0 0 1rem 0;
     padding-right: 1rem;
+    position: relative;
+    overflow: hidden;
     &:hover > .fa-solid {
       color: #9356dc;
     }
@@ -452,8 +455,45 @@ main {
   &__button--price {
     padding-top: 2rem;
     font-weight: 700;
+    position: absolute;
+    right: 1rem;
+    transition: all 0.5s;
+  }
+  &__button--check {
+    position: absolute;
+    right: -5rem;
+    font-size: 1.7rem;
+    color: white;
+    background-color: #99e2d0;
+    border-radius: 0 0.94019rem 0.94019rem 0;
+    height: 4.7rem;
+    width: 4.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+  }
+  &__button:hover {
+    .menu-container__button--check {
+      animation: button 0.5s ease-in-out backwards;
+      transform: translateX(-5rem);
+    }
+
+    .menu-container__button--price {
+      transform: translateX(-4rem);
+      animation: button 0.5s ease-in-out backwards;
+    }
+    @keyframes button {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(1);
+      }
+    }
   }
 }
+
 .order-container {
   display: flex;
   flex-direction: column;
