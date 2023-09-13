@@ -3,10 +3,6 @@ body {
   margin: 0px;
 }
 
-main {
-  background-color: #f6f6f6;
-}
-
 a {
   text-decoration: none;
   color: black;
@@ -342,10 +338,11 @@ main .reserve-explore-container__button:hover {
   flex-direction: column;
 }
 .resto-container__card--img {
-  height: 20rem;
+  height: 25rem;
   -o-object-fit: cover;
      object-fit: cover;
   position: relative;
+  width: 100%;
 }
 .resto-container__block {
   display: flex;
@@ -357,7 +354,9 @@ main .reserve-explore-container__button:hover {
   border-radius: 2.5rem 2.5rem 0rem 0rem;
   background-color: #f6f6f6;
   width: 100%;
-  position: absolute;
+  max-width: 1040px;
+  margin: -2rem auto auto auto;
+  z-index: 1;
 }
 .resto-container__card--content {
   display: flex;
@@ -395,8 +394,9 @@ main .reserve-explore-container__button:hover {
 .menu-container {
   display: flex;
   flex-direction: column;
-  padding-top: 1.2rem;
-  margin: 1rem;
+  margin: auto;
+  background-color: #f6f6f6;
+  max-width: 1040px;
 }
 .menu-container__title {
   font-family: Roboto;
@@ -410,6 +410,9 @@ main .reserve-explore-container__button:hover {
   width: 2.5rem;
   height: 0.1875rem;
   margin-bottom: 1rem;
+}
+.menu-container__subtitle {
+  margin-left: 1rem;
 }
 .menu-container__block {
   animation-name: card;
@@ -476,7 +479,7 @@ main .reserve-explore-container__button:hover {
   background: white;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
   align-items: center;
-  margin: 0 0 1rem 0;
+  margin: 0 1rem 1rem 1rem;
   padding-right: 1rem;
   position: relative;
   overflow: hidden;
@@ -543,6 +546,9 @@ main .reserve-explore-container__button:hover {
   flex-direction: column;
   align-items: center;
   height: 5rem;
+  background-color: #f6f6f6;
+  max-width: 1040px;
+  margin: auto;
 }
 .order-container__button {
   width: 13.625rem;
