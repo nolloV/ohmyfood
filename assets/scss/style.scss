@@ -361,6 +361,9 @@ main {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    @media screen and (min-width: 1040px) {
+      justify-content: center;
+    }
   }
   &__card--content-title {
     font-family: Shrikhand;
@@ -371,6 +374,7 @@ main {
   }
   &__card--txt {
     line-height: 1rem;
+    justify-content: space-around;
   }
 
   &__card--like {
@@ -515,7 +519,7 @@ main {
     font-weight: 300;
   }
   &__button--price {
-    padding-top: 2rem;
+    padding-top: 2.5rem;
     font-weight: 700;
     position: absolute;
     right: 1rem;
@@ -547,7 +551,7 @@ main {
     }
     .menu-container__button--plat h3,
     .menu-container__button--plat p {
-      width: 83%;
+      width: 75%;
     }
     @keyframes button {
       0% {

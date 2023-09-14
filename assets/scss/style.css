@@ -364,6 +364,11 @@ main .reserve-explore-container__button:hover {
   justify-content: space-around;
   align-items: center;
 }
+@media screen and (min-width: 1040px) {
+  .resto-container__card--content {
+    justify-content: center;
+  }
+}
 .resto-container__card--content-title {
   font-family: Shrikhand;
   font-size: 1.75rem;
@@ -373,6 +378,7 @@ main .reserve-explore-container__button:hover {
 }
 .resto-container__card--txt {
   line-height: 1rem;
+  justify-content: space-around;
 }
 .resto-container__card--like {
   font-size: 1.7rem;
@@ -516,7 +522,7 @@ main .reserve-explore-container__button:hover {
   font-weight: 300;
 }
 .menu-container__button--price {
-  padding-top: 2rem;
+  padding-top: 2.5rem;
   font-weight: 700;
   position: absolute;
   right: 1rem;
@@ -546,7 +552,7 @@ main .reserve-explore-container__button:hover {
 }
 .menu-container__button:hover .menu-container__button--plat h3,
 .menu-container__button:hover .menu-container__button--plat p {
-  width: 83%;
+  width: 75%;
 }
 @keyframes button {
   0% {
