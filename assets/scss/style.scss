@@ -495,8 +495,20 @@ main {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    line-height: 0rem;
-    margin: 1rem;
+    margin: 0 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+    h3,
+    p {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      margin: 0;
+    }
   }
   &__button--subtitle {
     font-size: 0.94019rem;
@@ -533,6 +545,10 @@ main {
       transform: translateX(-4rem);
       animation: button 0.5s ease-in-out backwards;
     }
+    .menu-container__button--plat h3,
+    .menu-container__button--plat p {
+      width: 83%;
+    }
     @keyframes button {
       0% {
         transform: translateX(0);
@@ -552,6 +568,7 @@ main {
   background-color: #f6f6f6;
   max-width: 1040px;
   margin: auto;
+  padding: 2rem 0 1rem 0;
   &__button {
     width: 13.625rem;
     height: 3.125rem;
