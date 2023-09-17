@@ -552,7 +552,7 @@ main {
     }
 
     .menu-container__button--price {
-      transform: translateX(-4rem);
+      transform: translateX(-5rem);
       animation: button 0.5s ease-in-out backwards;
     }
     .menu-container__button--plat h3,
@@ -564,7 +564,7 @@ main {
         transform: translateX(0);
       }
       100% {
-        transform: translateX(1);
+        transform: translateX(-5rem);
       }
     }
   }

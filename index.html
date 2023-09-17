@@ -25,13 +25,11 @@
   </head>
 
   <body>
-
     <div class="loader-container">
-          <div>
-            <img src="assets/images/logo/ohmyfood@2x.svg" alt="OhMyFood" />
-          </div>
-          <div class="loader-container__loader"></div>
-        </div>
+      <div>
+        <img src="assets/images/logo/ohmyfood@2x.svg" alt="OhMyFood" />
+      </div>
+      <div class="loader-container__loader"></div>
     </div>
 
     <div class="main-container">
@@ -47,6 +45,7 @@
           <img
             class="location-container__pin"
             src="./assets/images/Icon/Pin.svg"
+            alt="Location-pin"
           />
           <p>Paris, Belleville</p>
         </div>
@@ -59,9 +58,11 @@
           <p class="reserve-explore-container__txt">
             Découvrez des restaurants d'exception, sélectionnées par nos soins.
           </p>
-          <button class="reserve-explore-container__button">
-            Explorer nos restaurants
-          </button>
+          <a href="#restaurant">
+            <button class="reserve-explore-container__button">
+              Explorer nos restaurants
+            </button>
+          </a>
         </section>
 
         <section class="founction-container">
@@ -91,7 +92,9 @@
           </div>
         </section>
         <section class="restaurant-container">
-          <h1 class="restaurant-container__title">Restaurants</h1>
+          <h1 id="restaurant" class="restaurant-container__title">
+            Restaurants
+          </h1>
           <div class="restaurant-container__block">
             <a href="restaurants/menu-palette.html">
               <article class="restaurant-container__card">
