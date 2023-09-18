@@ -83,13 +83,14 @@ main {
     flex-direction: column;
     align-items: center;
     background: #f6f6f6;
-    height: 18rem;
+    height: 17rem;
     @media screen and (min-width: 1024px) {
-      height: 14rem;
+      height: 15rem;
     }
     &__title {
       text-align: center;
       width: 17.1875rem;
+      margin: 2rem 0 0 0;
       @media screen and (min-width: 1024px) {
         width: auto;
         font-size: 2.5rem;
@@ -136,7 +137,7 @@ main {
   display: flex;
   flex-direction: column;
   @media screen and (min-width: 1024px) {
-    margin: 0 8rem 2rem 8rem;
+    margin: 2rem 8rem 2rem 8rem;
   }
   &__block {
     @media screen and (min-width: 1024px) {
@@ -160,7 +161,7 @@ main {
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
     gap: 1rem;
     align-items: center;
-    margin: 1rem;
+    margin: 1rem 1rem 2rem 1rem;
     font-weight: 500;
     padding-right: 0.8rem;
     &:hover > .fa-solid {
@@ -194,7 +195,7 @@ main {
     padding-bottom: 0rem;
   }
   &__title {
-    margin: 1.25rem;
+    margin: 3rem 1.25rem 0 1.25rem;
     @media screen and (min-width: 1024px) {
       margin: 1.25rem 0rem 0rem 8rem;
     }
@@ -245,7 +246,7 @@ main {
     align-items: center;
   }
   &__card--txt {
-    line-height: 1rem;
+    line-height: 0.7rem;
   }
 
   &__card--content-title {
@@ -262,7 +263,7 @@ main {
     top: 2px;
     opacity: 0;
     transition: all 0.7s ease-out;
-    animation-fill-mode: backwards;
+    animation-fill-mode: both;
   }
 
   &__card--like:hover {
@@ -290,7 +291,7 @@ main {
     width: 8rem;
     @media screen and (min-width: 1024px) {
       margin-left: 4rem;
-      width: 7rem;
+      width: 6rem;
     }
   }
   &__block {
@@ -423,9 +424,7 @@ main {
     margin-left: 1rem;
   }
   &__block {
-    animation-name: card;
-    animation-duration: 1.2s;
-    animation-fill-mode: both;
+    animation: card 1s ease-out forwards;
     opacity: 0;
 
     @media screen and (min-width: 1024px) {
@@ -505,7 +504,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin: 0 10px;
+    margin: 0 1rem;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
