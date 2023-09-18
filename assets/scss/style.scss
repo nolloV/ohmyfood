@@ -120,6 +120,9 @@ main {
       box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
       border: none;
       transition: all 0.2s linear;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
     &__button:hover {
       background: linear-gradient(
