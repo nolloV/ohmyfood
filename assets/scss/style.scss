@@ -520,6 +520,9 @@ main {
       overflow: hidden;
       text-overflow: ellipsis;
       margin: 0;
+      @media screen and (max-width: 350px) {
+        width: 85%;
+      }
     }
   }
   &__button--subtitle {
@@ -560,6 +563,9 @@ main {
     .menu-container__button--plat h3,
     .menu-container__button--plat p {
       width: 75%;
+      @media screen and (max-width: 350px) {
+        width: 60%;
+      }
     }
     @keyframes button {
       0% {

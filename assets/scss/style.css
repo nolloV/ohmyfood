@@ -527,6 +527,12 @@ main .reserve-explore-container__button:hover {
   text-overflow: ellipsis;
   margin: 0;
 }
+@media screen and (max-width: 350px) {
+  .menu-container__button--plat h3,
+  .menu-container__button--plat p {
+    width: 85%;
+  }
+}
 .menu-container__button--subtitle {
   font-size: 0.94019rem;
   font-weight: 300;
@@ -563,6 +569,12 @@ main .reserve-explore-container__button:hover {
 .menu-container__button:hover .menu-container__button--plat h3,
 .menu-container__button:hover .menu-container__button--plat p {
   width: 75%;
+}
+@media screen and (max-width: 350px) {
+  .menu-container__button:hover .menu-container__button--plat h3,
+  .menu-container__button:hover .menu-container__button--plat p {
+    width: 60%;
+  }
 }
 @keyframes button {
   0% {
